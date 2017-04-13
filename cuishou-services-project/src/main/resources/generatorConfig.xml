@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="D:/maven-jar-duns3/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar" />
+
+  <context id="db2table" targetRuntime="MyBatis3">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"  
+          connectionURL="jdbc:mysql://localhost:3306/tien_db"  
+          userId="root"  
+          password="root">  
+        </jdbcConnection>
+		<javaModelGenerator targetPackage="com.hotien.service.po" targetProject="cuishou-project/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.hotien.service.dao" targetProject="cuishou-project/src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.hotien.service.dao" targetProject="cuishou-project/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+    <table tableName="cuishou_user_repay">
+    </table>
+  </context>
+</generatorConfiguration>
