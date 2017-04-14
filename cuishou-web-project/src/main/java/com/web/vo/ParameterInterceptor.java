@@ -8,29 +8,30 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import aicai.config.Config;
 
+
+import com.vo.Config;
 import com.web.util.RequestUtil;
 
 /**
  * 
  * 
  * Title:
- * <h1>参数拦截</h1> Description:
+ * <h1>鍙傛暟鎷︽埅</h1> Description:
  * <p>
  * <ul>
  * <ol>
- * 保存当前线程中的request与response <b>用与之后获取</b>
+ * 淇濆瓨褰撳墠绾跨▼涓殑request涓巖esponse <b>鐢ㄤ笌涔嬪悗鑾峰彇</b>
  * </ol>
  * <ol>
- * 将URI中的参数放至model中 <b>用与freemarker中直接获取</b>
+ * 灏哢RI涓殑鍙傛暟鏀捐嚦model涓� <b>鐢ㄤ笌freemarker涓洿鎺ヨ幏鍙�</b>
  * </ol>
  * </ul>
  * </p>
  * Copyright: guang.com(c) 2014
  * 
  * @author zhenghr
- * @created 上午9:34:33
+ * @created 涓婂崍9:34:33
  * @version $Id: ParameterInterceptor.java 89112 2015-06-13 08:45:20Z zhjy $
  */
 public class ParameterInterceptor extends HandlerInterceptorAdapter {
