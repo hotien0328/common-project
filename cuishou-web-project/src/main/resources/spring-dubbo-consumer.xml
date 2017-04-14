@@ -12,4 +12,6 @@
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:reference id="commonFacade" interface="com.hotien.facade.CommonFacade"/>
+    
+    <dubbo:reference id="externalInterfaceFacade" interface="com.hotien.facade.ExternalInterfaceFacade"/>
 </beans>

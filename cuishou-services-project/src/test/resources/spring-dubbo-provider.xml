@@ -17,4 +17,6 @@
     <bean id="commonFacadeImpl" class="com.hotien.facade.impl.CommonFacadeImpl" />
 	<dubbo:service interface="com.hotien.facade.CommonFacade" ref="commonFacadeImpl" version="1.0.1" delay="-1"/>	
 	
+	 <bean id="ExternalInterfaceFacadeImpl" class="com.hotien.facade.impl.ExternalInterfaceFacadeImpl" />
+	<dubbo:service interface="com.hotien.facade.ExternalInterfaceFacade" ref="ExternalInterfaceFacadeImpl" version="1.0.1" delay="-1"/>	
 </beans>
