@@ -10,12 +10,12 @@ import com.hotien.service.CommonService;
 import com.util.ServiceManager;
 
 /**
- * Í¬²½Êı¾İÏß³Ì
+ * 
   * @ClassName: DataSyncThread
   * @Description: TODO
   * Copyright: Copyright (c) 2017 
   * @author hotien
-  * @date 2017Äê4ÔÂ14ÈÕ ÏÂÎç1:25:06
+  * @date 2017å¹´4æœˆ14æ—¥ ä¸‹åˆ2:31:44
   *
  */
 public class DataSyncThread extends Thread
@@ -39,6 +39,7 @@ public class DataSyncThread extends Thread
         {
             return;
         }
-        commonService.sayHello();
+        String result = commonService.sayHello();
+        System.out.println(result);
     }
 }

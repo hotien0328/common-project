@@ -19,4 +19,18 @@ public class ExternalUniqueVo extends BaseVo
       */
     private static final long serialVersionUID = 718742042157120794L;
     
+    private String userId;
+
+    public String getUserId()
+    {
+        return userId;
+    }
+
+    public void setUserId(String userId)
+    {
+        this.userId = userId;
+    }
+    
+    
+    
 }
